@@ -3,6 +3,7 @@ var motionTest = 30;
 
 function setup() {
     createBoard();
+    placePieces();
 }
 
 function draw() {

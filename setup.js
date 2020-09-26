@@ -24,15 +24,13 @@ function placePieces() {
     // B = Bishop
     // P = Pawn
     // N = Knight
+    fill(0);
+    textSize(80);
 
-    for(let i = 0; i < 10; i++) {
-        for(let j = 0; j < 10; j++) {
-            if (j % 2 == 0) {
-                square(64 * i, 64 * j, 64);
-            } else {
-                square((64 * i) + 64, 64 * j, 64);
-            }
+    for(let i = 0; i < 9; i++) {
+        for(let j = 0; j < 9; j++) {
+            text('P', 80 * i, 80 * j);
         }
     }
-    
+
 }
